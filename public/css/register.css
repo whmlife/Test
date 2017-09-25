@@ -1,0 +1,53 @@
+.head{width:100%;height:170px;background: #3f3f41;}
+.headContent{width: 85%;margin-left: auto;margin-right: auto;height: 85%;padding-top: 25px;}
+.headContent>.logo{float: left;}
+.headContent>.dear{float: right;}
+.link{margin-top: 25px;margin-left: 55px;}
+.link>a{color: #fff;padding:6px 25px;font-size: 13px;}
+.link>a:nth-of-type(1){border:1px solid #fff;letter-spacing: 2px;}
+/*******************content登录注册界面***************************/
+.content{width:100%;height: 840px;background: url(../img_reister/registerBg.jpg) no-repeat center;background-size: cover;z-index: 1;}
+.cover{width:100%;height:86%;background:rgba(0,0,0,.5);z-index: 2;padding-top:10%;}
+.register{width:50%;}
+.box{text-align: center;margin-bottom: 18px;}
+.rember{text-align:center;}
+.box>label{font-size: 18px;color: #f8f8f8;opacity: 0.8;font-family: "楷体";}
+.box>input{font-size:16px;width: 340px;height: 45px; background: rgba(0,0,0,.3);box-sizing: border-box;border: 0;outline: none;padding-left: 15px;
+	color: rgba(255,255,255,0.4);font-size: 14px;border: 1px solid rgba(255,255,255,.5);}
+.pwd{margin-left: 18px;}
+.truePwd{margin-left: -21px;}
+.phone {margin-left: -19px;}
+/*.phone>input{width:226px;}*/
+.phone>a{padding: 12.5px;border: 1px solid rgba(255,255,255,.4);font-size: 12px;display: inline-block;color: #f8f8f8;opacity: 0.8;}
+.rember{font-size: 15px;color: #f8f8f8;opacity: 0.8;margin-top: 20px;margin-left: 76px;}
+.rember>input{margin-left: 3px;}
+.rember>a{font-size: 14px;color: #f8f8f8;opacity: 0.8;margin-left: 215px;}
+.lastRegister>input{width: 400px;
+    border-radius: 12px;
+    color: #f8f8f8;
+    opacity: 0.8;
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: 10px;
+    cursor: pointer;}
+.lastRegister{margin-left: 70px;margin-top:20px;border:none;}
+
+
+
+.activeBorder{
+	border-color: red !important;
+}
+.activeBg{
+	background: rgba(255,249,249,0.5) !important;
+	color: #333 !important;
+}
+.tipColor{color: red;}
+/*foot*/
+.foot{width: 100%;height: 160px;background: #3f3f41;padding-top: 30px;}
+.fContent{width:85%;margin-left:auto;margin-right: auto;text-align: center;color: #866c4d;font-size: 20px;font-weight: normal;}
+.parter>a,.fLink>a{color: #866c4d;}
+.parter>a{font-size: 18px;}
+.fLink{margin-top: 35px;}
+.fLink>a{font-size: 16px;}
+.copyright,.license{font-size: 16px;}
+.copyright{margin-top: 20px;margin-bottom: 5px;}

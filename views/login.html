@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>登录|注册</title>
+	<link rel="stylesheet" type="text/css" href="/css/base1.css">
+	<link rel="stylesheet" type="text/css" href="/css/login.css">
+</head>
+<body>
+	<div class="top">
+		<a class="loginLogo" href="/"></a>
+	</div>
+	<div class="container">
+		<div class="info">
+			<div class="register">
+						<input type="text" name="name" id="name" placeholder="用户名" data-pattern="[a-zA-z][a-zA-Z0-9_]{2,9}">
+						<div class="tip rname-tip" id="tip1">2~9个字符，仅限数字、字母</div>
+						<input type="password" name="psd" id="psd" placeholder="请输入密码"  data-pattern="(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{6,10}">
+						<div class="tip rpsd-tip" id="tip2">6~10个字符，不能含有空格</div>
+						<input type="password" name="comfirmpsd" id="comfirmpsd" placeholder="确认密码" />
+						<div class="tip rcompsd-tip" id="tip3">请再次输入密码</div>
+					<button id="submit">确认注册</button>
+					<div class="toLogin"><a href="javascript:void(0)">已有帐号？去登录</a></div>
+			</div>
+			<div class="login">
+					<input type="text" name="name" id="name2" placeholder="用户名" />
+					<div class="tip lname-tip" id="tip4"></div>
+					<input type="password" name="psd" id="psd2" placeholder="密码" />
+					<div class="tip lpsd-tip" id="tip5"></div>
+					<button id="submit2">登&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;录</button>
+					<div class="toReg"><a href="javascript:void(0)">没有帐号？去注册</a></div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="/js/until.js"></script>
+	<script type="text/javascript" src="/js/login.js"></script>
+</body>
+</html>

@@ -1,0 +1,252 @@
+body,
+html {
+    width: 100%;
+    height: 100%;
+    background: url(../images/2.jpg) no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.loginLogo {
+    display: block;
+    width: 30%;
+    height: 100%;
+    background: url(../img_reister/registerlogo.png) no-repeat 45% center;
+}
+
+.top,
+.bottom {
+    height: 150px;
+    width: 100%;
+    background: #333;
+}
+
+.top {
+    background: url(../images/1.png)no-repeat 80% 45%, #333;
+}
+
+.container {
+    width: 50%;
+    height: 60%;
+    position: absolute;
+    top: 55%;
+    left: 23%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+
+.info {
+    width: 200%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -100%;
+    transition: all .5s;
+    /*// background:gray;*/
+}
+
+.register,
+.login {
+    width: 50%;
+    height: 100%;
+    float: left;
+    text-align: center;
+    position: relative;
+}
+
+.register h2,
+.login h2 {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.info * {
+    font-size: 16px;
+}
+
+
+/*form label{height:50px;line-height: 50px;width:80%;display: block;text-align:center;margin:0 auto;margin-bottom: 50px;font-size: 16px;color: #333;}*/
+
+.info input {
+    width: 400px;
+    height: 50px;
+    border-radius: 6px;
+    border: 1px solid rgba(255, 255, 255, .15);
+    text-align: center;
+    color: #f2f2f2;
+    /*margin-bottom: 30px;*/
+    background: rgba(45, 45, 45, .4);
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1);
+    transition: all .5s;
+}
+
+.tip {
+    width: 400px;
+    height: 20px;
+    margin: 0 auto;
+    padding: 5px 0;
+    text-align: right;
+    font-size: 12px;
+    color: #666;
+    /*opacity: 0;*/
+}
+
+.info input:focus+.tip {
+    color: #f2f2f2;
+}
+
+.toLogin,
+.toReg {
+    width: 400px;
+    margin: 0 auto;
+}
+
+.toLogin a,
+.toReg a {
+    float: right;
+    font-size: 14px;
+    color: #fff;
+    opacity: .7;
+    padding: 14px 0;
+    cursor: pointer;
+}
+
+.info input:focus {
+    outline: none;
+    background: rgba(240, 240, 240, .8);
+    color: #000;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .1) inset, 0 2px 7px 0 rgba(0, 0, 0, .2);
+}
+
+input::-webkit-input-placeholder {
+    color: #666;
+}
+
+input:-moz-placeholder {
+    color: #666;
+}
+
+input::-ms-input-placeholder {
+    color: #666;
+}
+
+#submit,
+#submit2 {
+    width: 400px;
+    height: 50px;
+    background: #ef4300;
+    outline: none;
+    border: 2px solid #ff730e;
+    color: #f2f2f2;
+    border-radius: 25px;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1);
+    transition: all .5s;
+}
+
+#submit:hover,
+#submit2:hover {
+    background: none;
+    color: #ef4300;
+}
+
+#register,
+#login {
+    position: absolute;
+    top: 50%;
+    width: 80%;
+    padding: 0 10%;
+    transform: translateY(-50%);
+    margin: 0 auto;
+}
+
+@media screen and ( max-width:1023px) {
+    .container {
+        left: 50%;
+    }
+}
+
+@media screen and ( max-width:960px) {
+    .info input,
+    #submit,
+    #submit2,
+    .toLogin,
+    .toReg,
+    .tip {
+        width: 70%
+    }
+    .container {
+        width: 60%;
+    }
+}
+
+@media screen and ( max-width: 768px) {
+    .top,
+    .bottom {
+        height: 100px;
+    }
+    .container {
+        width: 80%;
+    }
+}
+
+@media screen and ( max-width: 435px) {
+    .info input,
+    #submit,
+    #submit2,
+    .toLogin,
+    .toReg,
+    .tip {
+        width: 80%
+    }
+}
+
+
+/*@media screen and ( min-width: 767px ){
+	.info input,#submit,#submit2,.toLogin,.toReg{width:100%}
+}*/
+
+
+/* ipad竖屏 */
+
+
+/*@media screen
+and (min-width : 768px){
+.info input,#submit,#submit2,.toLogin,.toReg{width:100%}
+	.top{height: 100px;}
+	.container{width:60%;height: 60%;}
+	
+}*/
+
+@media screen and ( max-width: 320px) {
+    .container {
+        width: 100%;
+        height: 60%;
+    }
+    .top,
+    .bottom {
+        height: 80px;
+    }
+    .info input,
+    #submit,
+    #submit2 {
+        height: 30px;
+    }
+    .tip {
+        padding: 0;
+    }
+}
+
+
+/* 判断iphone4-iphone4s */
+
+
+/* 横屏竖屏判断方法与ipad一样 */
+
+
+/*// @media only screen
+// and (max-device-width : 320px){
+// 	.top,.bottom{height: 80px;}
+// 	.info input,#submit,#submit2{height: 30px;}
+// 	.tip{padding:0;}
+
+// }*/

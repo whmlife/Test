@@ -1,0 +1,233 @@
+@charset "utf-8";
+/*header*/
+.wrapper{
+				width:100%;
+		}
+/*head头部*/
+header {
+    width: 100%;
+    height: 4.5em;
+    background: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    left:0;
+    z-index: 10;
+}
+/*logo图标*/
+.logo {
+	width:19.8055190%;
+    position: absolute;
+    left: 0px;
+    margin-top: 0.5833333em;
+    margin-left: 3.75em;
+    z-index: 100;
+}
+/*下拉菜单*/
+.list{
+	position: absolute;
+	background: rgba(0, 0, 0, 0.6);
+	height:0;
+	overflow: hidden;
+	transition: all 0.3s;
+	z-index: 10;
+}
+.list>li:hover{
+	background: #d51413;
+}
+.menu:hover .list{
+	height:108px;
+}
+.menu:hover .list_2{
+	height:216px;
+}
+/*导航栏*/
+.nav {
+	width:60%;
+    margin: 0px auto;
+    text-align: center;
+}
+.nav > li {
+    display: inline-block;
+    position: relative;
+}
+.nav>li:hover{
+	background: #d51413;
+}
+.nav>li> a,.list >li > a ,.mob-down>ul>li>a{
+    display: block;
+    padding: 0em 0.6666666em;
+    text-align: center;
+    font-size: 1.25em;
+    color: #E5E5E5;
+    font-weight: normal;
+    text-shadow: 0px 0px 1px #E5E5E5;
+    line-height: 3.6em;
+}
+img{max-width: 100%;}
+.logo>a>img{
+	max-width: 100%;
+	min-width: 200px;
+}
+body,html{
+	background: #F2F2F2;
+	height: auto;
+}
+.container{
+	width: 80%;
+	margin: 0 auto;
+	margin-top:100px;
+
+
+}
+.wrap-title{width:100%;margin-bottom: 30px;}
+.title{width:50%;margin: 0 auto;}
+.wrap-title img{
+	margin: 0 auto;
+	padding: 0px 30px 15px;
+	border-bottom:1px solid #ccc;
+	margin-bottom: 20px;
+}
+.wrap-title p{font-size: 12px;color:#9f9f9f;text-align: center;line-height: 20px;}
+.wrap-title p:last-of-type{color:#d3d3d3;margin-top: 32px;}
+
+.our-works{
+	width: 100%;
+	margin-top: 80px;
+}
+.our-works li{
+
+	position: relative;
+	float: left;
+	width: 24%;
+	margin: 0 0.5% 45px;
+	background: #fff;
+	transition: all .3s ease-in-out;
+
+	overflow: hidden;
+}
+.our-works li.show{width: 24%;}
+
+
+.our-works li:after{
+	position: absolute;
+    content: '';
+    left: 0;
+    bottom: 40px;
+    width: 100%;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 0px 35px 65px #666;
+    z-index: -1;
+}
+.our-works a{position: relative;display: block;}
+.our-works li a:after{
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	content: "";
+	opacity: 0;
+	background: rgba(0,0,0,.3);
+	transition: .3s;
+}
+.our-works li:hover a:after{
+	opacity: 1;
+}
+.our-works li img{width: 100%;}
+.our-works li h4{
+	font-size: 14px;
+	text-align: center;
+	color: #818181;
+	padding: 5% 0;
+	font-weight: normal;
+}
+.our-works .seach{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%) scale(0.3);
+	display: block;
+	width: 140px;
+	height: 70px;
+	background: url(../img/zp-suo.png) no-repeat center center;
+	opacity: 0;
+	transition: all .3s ease-in-out;
+	z-index: 3;
+	
+}
+.our-works li:hover .seach{opacity: 1;transform: translate(-50%,-50%) scale(1);}
+
+.our-works li .seach:before,.our-works li .seach:after{
+	position: absolute;
+	content: "";
+	width: 0%;
+	height: 1px;
+	background: #fff;
+	transition: all .4s cubic-bezier(0.6, -0.28, 0.74, 0.05);
+	z-index: 2;
+}
+.our-works li .seach:before{top: 0;right: 0;}
+.our-works li .seach:after{bottom: 0;left: 0;}
+
+.our-works li:hover .seach:before,.our-works li:hover .seach:after{width: 100%;}
+
+
+/*加载更多*/
+#more{
+	width: 100px;
+	height: 50px;
+	background: #8E9E8D;
+	text-align: center;
+	line-height: 50px;
+	font-size: 14px;
+	color:#f2f2f2;
+	margin: 0 auto;
+	cursor: pointer;
+	transition: .5s;
+	border-radius: 6px;
+	transition: 1s;
+}
+
+.hide{
+	transform: scale(0);
+}
+
+#toTop{text-align: center;margin-top: 75px;border-top: 1px solid #ccc;padding-bottom: 20px;}
+#more:hover{color:#D51413;}
+#toTop i{
+	margin: 10px auto;
+	display: block;
+	width: 0;
+	height: 0;
+	border: 5px solid;
+	border-color:  transparent transparent #333 transparent;
+}
+#toTop span{
+	margin: 0 auto;
+	cursor:pointer;
+	padding: 8px;
+	color:#a2a2a2;
+}
+
+@media screen and (max-width: 1024px) {
+	.our-works li{
+		width: 31%;
+		margin: 0 1% 45px;
+	}
+	.wrap-title img{width:80%;}
+	.title{width:70%;}
+}
+
+@media screen and (max-width: 768px) {
+	.our-works li{
+		width: 49%;
+		margin: 0 0.5% 45px;
+	}
+}
+@media screen and (max-width: 639px) {
+	.our-works li{
+		float: none;
+		width: 90%;
+		margin: 0 auto :;;
+	}
+}

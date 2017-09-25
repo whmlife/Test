@@ -1,0 +1,150 @@
+.bg{
+	background-image: url(../img/book.jpg);
+	background-position: center top;
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.bookText{
+	width:700px;
+	box-sizing: border-box;
+	border:1px solid #AEAEAE;
+	background: #fff;
+	margin:55px auto;
+}
+.bookText>.head{
+	width:100%;
+	padding-top:10px;
+	padding-bottom: 10px;
+	background: rgb(177, 39, 39);
+  text-align: center;
+}
+.row{
+	  padding-top: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e8d5d5;
+}
+.row>h1{
+	font-size: 20px;
+  text-align: center;
+}
+.need{
+	font-size: 16px;
+  font-weight: bold;
+  display: block;
+  padding-top: 20px;
+  padding-bottom: 5px;
+  padding-left: 36px;
+}
+.service,#time{
+	width: 25px;
+  height: 18px;
+  margin-left: 33px;
+}
+.sText{
+	font-size: 13px;
+  position: relative;
+  top: -2px;
+}
+.iTip{
+	width: 15px;
+  height: 15px;
+  padding-right: 6px;
+  display: inline-block;
+  background: url(../img/error.png) no-repeat center center;
+  position: absolute;
+  left: 30px;
+  top: 45px;
+  display: none;
+}
+.tip{
+  position: relative;
+  display: block;
+  padding-left: 54px;
+  padding-top: 5px;
+  color: red;
+  font-weight: bold;
+  display: none;
+}
+.timeBox{
+	margin:20px auto;
+}
+.user:after,.phone:after{
+	content: "*";
+  color: #FF3824;
+  margin-top: 4px;
+  padding-left: 5px;
+  display: inline-block;
+  line-height: 0;
+  vertical-align: middle;
+}
+.userBox{
+	position:relative;
+}
+.userBox>i:nth-of-type(1){
+  display: inline-block;
+  position: absolute;
+  width: 25px;
+  height: 15px;
+  top: 9px;
+  left: 38px;
+  background: url(../img/user.png) no-repeat center;
+}
+#phoneBg{
+	background: url(../img/phone.jpg) no-repeat center;
+}
+#user,#phone,#contact,#city{
+	width: 250px;
+  height: 30px;
+  margin-left: 36px;
+  padding-left: 25px;
+  margin-bottom:5px;
+  outline: none;
+}
+#contact,#city{
+	width:270px;
+	padding-left: 5px;
+}
+.bookSumit{
+  display: inline-block;
+  padding: 10px 65px;
+  font-size: 22px;
+  background-color: #b12727;
+  color: #fff;
+  border-color: #fff;
+  margin: 60px auto 40px;
+}
+.data{
+	position: absolute;
+	width:13px;
+	height: 14px;
+	left: 71px;
+  top: 1px;
+	display: inline-block;
+	background: url(../img/data.png) no-repeat center center;
+}
+footer{
+	padding-top:20px;
+	padding-bottom: 20px;
+	text-align: center;
+}
+footer>a{
+	position: relative;
+	color: #333;
+}
+.fSpan{
+	padding-right: 15px;
+}
+/*js操作的样式*/
+.borderColor{
+	border-color: #4db8ff;
+}
+.border_1{
+  border-color: red !important;
+}
+.border_2{
+  border-color: green !important;
+}
+.display{
+  display: block;
+}

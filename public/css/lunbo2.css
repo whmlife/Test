@@ -1,0 +1,95 @@
+#main{
+	width: 100%;
+	height: 100%;
+}
+.main-list{
+	position: relative;
+	float: left;
+	width: 100%;
+	height: 100%;
+}
+#main1{
+	position:relative;
+	overflow: hidden;
+}
+
+.slider-ul{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+.slider-li{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	transition: all 1s;
+
+}
+#main1 .btn{
+	position: absolute;
+	top: 50%;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	background: rgba(255,0,0,.8);
+	color: #fff;
+	font-size: 40px;
+	line-height: 60px;
+	text-align: center;
+	cursor: pointer;
+}
+#main1 .btn:first-of-type, #banner .btn:first-of-type, #banner3 .btn:first-of-type{
+	left: 7%;
+}
+#main1 .btn:last-of-type, #banner .btn:last-of-type, #banner3 .btn:last-of-type{
+	right: 7%;
+	
+}
+
+.slider-ul .slider-li a{
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size: cover; 
+	background-position: center;
+}
+
+/*原点导航*/
+
+.bnav{
+	position: absolute;
+	bottom: 5%;
+	left: 45%;
+}
+.bnav li{
+	float: left;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	border: 1px solid #D72316;
+	margin: 5px;
+	opacity: .3;
+}
+ .bnav li a{
+	display: block;
+	width: 16px;
+	height: 16px;
+	margin: 2px;
+	border-radius: 50%;
+	background: #D72316;
+	cursor: pointer;
+
+}
+
+.bnav li.active{
+	opacity: 1;
+}
+
+/*小屏banner轮播*/
+#sm-banner{
+	width: 100%;
+	height: 100%;
+	display: none;
+}

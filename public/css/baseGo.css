@@ -1,0 +1,40 @@
+@charset "utf-8";
+body, dl,dd,ul,li,ol,h1,h2,h3,h4,h5,h6,pre,p{margin:0;padding:0;}  
+
+/*清除浮动*/
+.clearfix:after{
+	content:'';
+	display:block;
+	height:0;
+	clear:both;
+	visibility:hidden;
+	}
+/* for IE6 IE7 */
+.clearfix {
+	zoom:1
+	}
+
+/*CSS*/
+html, body, div, p, ul, ol, li, dl, dt, dd, form, input, select, button, textarea, iframe, table, th, td, blockquote { margin: 0; padding: 0; font-size: 12px; }
+html, body { width: 100%; height: 100%; }
+body { zoom: 1;font-family: Arial, Helvetica, sans-serif, "微软雅黑",  Arial,"Microsoft YaHei";  }
+body { *font-family:"微软雅黑", "Microsoft YaHei";
+}
+img { border: 0 none; vertical-align: middle; display: block;}
+ul, ol, li { list-style: none; }
+
+body, input, select, button, textarea { font-size: 12px; font-family: Arial, "微软雅黑"; }
+body, input, select, button, textarea { *font-family:"微软雅黑", "Microsoft YaHei";
+}
+table, tr, th, td { border: 0 none; vertical-align: middle; border-collapse: collapse; }
+button { cursor: pointer; }
+i, em, cite, address { font-style: normal; }
+a { text-decoration: none; outline: none;}
+a:link { text-decoration: none; cursor: pointer; }
+a:hover, a:active { text-decoration: none;}
+a:focus { outline: none; }
+button::-moz-focus-inner, input[type="reset"]::-moz-focus-inner, input[type="button"]::-moz-focus-inner, input[type="submit"]::-moz-focus-inner, input[type="file"]>input[type="button"]::-moz-focus-inner {
+border:none;
+padding:0;
+
+}
